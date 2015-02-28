@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#000" >
+
+        <com.example.playback.VisualiserView
+            android:id="@+id/visualizerView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.example.playback.VisualiserView>
+    </FrameLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <Button
+            android:id="@+id/PrButton2"
+            android:background="@drawable/skipback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+            />
+
+        <Button
+            android:id="@+id/Pbutton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/Nbutton2"
+            android:background="@drawable/skip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+             />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/DB" />
+
+    </LinearLayout>
+
+</LinearLayout>
